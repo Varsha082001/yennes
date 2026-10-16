@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YENNES TDL</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html">
+        <img src="Images/YENNESLogo.jpg" alt="YENNES">
+    </a>
+</div>
+
+    <!-- Menu -->
+ <ul class="nav-links">
+
+    <li class="dropdown">
+    <a href="index.html">Home</a>
+
+</li>
+
+     <li class="dropdown">
+    <a href="service.html">Services ▼</a>
+
+    <ul class="dropdown-menu">
+        
+        <li><a href="implementation.html">Implementation</a></li>
+        <li><a href="amc.html">AMC Support</a></li>
+     
+    </ul>
+</li>
+
+      <li class="dropdown">
+    <a href="solutions.html">Solutions ▼</a>
+
+    <ul class="dropdown-menu">
+        <li><a href="verticalsolutions.html">Vertical Solutions</a></li>
+        <li><a href="tallyaddons.html">Add-ons</a></li>
+        <li><a href="tdl-customisation.html">TDL Customisation</a></li>
+        
+    </ul>
+</li>
+
+<li class="dropdown">
+    <a href ="company.html">About us ▼</a>
+    <ul class="dropdown-menu">
+        <li><a href="Achievements.html">Awards</a></li>
+    </ul>
+</li>
+
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+    <a href="requestdemo.html" class="demo-btn">
+        Request Demo
+    </a>
+</nav>
+
+<section class="page-banner">
+  <img src="Images/YENNESLogo.jpg" class="banner-logo" alt="YENNES Logo">
+    <div class="banner-content">
+        <h1>Contact</h1>
+        <p>
+            Home /
+            <span>Contact</span>
+        </p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="contact-heading">
+        <span>LET'S START A CONVERSATION</span>
+        <h2>Contact Us</h2>
+        <p>
+            Have a question about TDL Customization, AMC, Add-ons or
+            Implementation? We'd love to hear from you.
+        </p>
+    </div>
+
+    <!-- Contact Cards -->
+    <div class="contact-cards">
+        <div class="contact-card">
+            <div class="contact-icon">
+                📍
+            </div>
+            <h3>Address</h3>
+            <p>
+                Office No. 1, 2nd Floor, 
+                Gokul Arcade, No.2, Sardar Patel Road, 
+                Adyar, Chennai – 600 020.
+            </p>
+        </div>
+        <div class="contact-card">
+            <div class="contact-icon">
+                📞
+            </div>
+            <h3>Call Us</h3>
+            <p>
+                +044 - 43931111
+                <br>
+                +91 9940401111
+            </p>
+        </div>
+        <div class="contact-card">
+            <div class="contact-icon">
+                ✉
+            </div>
+            <h3>Email</h3>
+            <p>
+                info@yennes.com
+            </p>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-icon">
+                🕒
+            </div>
+            <h3>Working Hours</h3>
+            <p>
+                Monday - Saturday
+                <br>
+                9:15 AM - 6:00 PM
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="message-box">
+        <h2>For Enqueries</h2>
+        <form id="contactForm">
+            <div class="form-row">
+                <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required>
+                <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required>
+            </div>
+
+            <input
+            type="text"
+            id="subject"
+            placeholder="Subject"
+            required>
+            <textarea
+            id="message"
+            rows="7"
+            placeholder="Your Message"
+            required></textarea>
+            <button type="submit">
+                Send Message
+            </button>
+            <p id="status"></p>
+        </form>
+    </div>
+
+
+<!-- ================= BRANCHES ================= -->
+
+<section class="locations-section">
+    <h2 class="location-title">Our Locations</h2>
+
+    <div class="location-tabs">
+    <button type="button" class="tab-btn active" onclick="showBranch(event,'chennai')">Chennai</button>
+    <button type="button" class="tab-btn" onclick="showBranch(event,'madurai')">Madurai</button>
+    <button type="button" class="tab-btn" onclick="showBranch(event,'puducherry')">Puducherry</button>
+    <button type="button" class="tab-btn" onclick="showBranch(event,'salem')">Salem</button>
+    <button type="button" class="tab-btn" onclick="showBranch(event,'trichy')">Trichy</button>
+    <button type="button" class="tab-btn" onclick="showBranch(event,'tirunelveli')">Tirunelveli</button>
+    <button type="button" class="tab-btn" onclick="showBranch(event,'coimbatore')">Coimbatore</button>
+    <button type="button" class="tab-btn" onclick="showBranch(event,'tiruppur')">Tiruppur</button>
+    </div>
+
+    <!-- Chennai -->
+    <div id="chennai" class="branch-content active">
+        <div class="branch-details">
+            <h3>Chennai (Registered Office)</h3>
+            <p>
+                Office No.1, 2nd Floor, Gokul Arcade,<br>
+                No.2, Sardar Patel Road,<br>
+                Adyar, Chennai - 600020
+            </p>
+
+            <a href="https://maps.google.com/?q=Yennes+Infotec+Pvt+Ltd+Adyar+Chennai"
+               target="_blank"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps?q=Yennes+Infotec+Pvt+Ltd+Adyar+Chennai&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+
+
+    <!-- Madurai -->
+    <div id="madurai" class="branch-content">
+        <div class="branch-details">
+            <h3>Madurai</h3>
+            <p>YENNES Infotec (P) Limited
+                No.6, Sarvodhaya 4th Street, New Ellis Nagar 
+                70th Feet Road, Madurai - 625016, Tamil Nadu</p>
+
+            <a href="https://maps.app.goo.gl/1grGBQJfPszsa9oD8"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.214551367759!2d78.10029217368401!3d9.916081274475845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c58f6f6d5005%3A0xc83536520ca622fa!2sYENNES%20Infotec%20(P)%20Limited!5e0!3m2!1sen!2sin!4v1787124504654!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+
+
+    <!-- Puducherry -->
+ <div id="puducherry" class="branch-content">
+        <div class="branch-details">
+            <h3>Puducherry</h3>
+            <p>No 21 D, Rodiar Mill Street, Mudaliarpet, Puducherry – 605004
+                Tel : 0413 – 2211161,
+                Mobile : +91 9840886813.
+                Email : pondy@yennes.com</p>
+
+            <a href="https://maps.app.goo.gl/1grGBQJfPszsa9oD8"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.761161570144!2d79.8083043737136!3d11.921702837028759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5361eaa4e90195%3A0xed0c9b069ee446f7!2sYENNES%20Infotec%20(P)%20Limited!5e0!3m2!1sen!2sin!4v1787124900200!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        
+    </div>
+
+    <!-- Salem -->
+    <div id="salem" class="branch-content">
+        <div class="branch-details">
+            <h3>Salem</h3>
+            <p>No: 58, Ramakrishna Rd, Seerangapalayam, Salem (M.Corp.), Tamil Nadu 636007
+                Tel : 0427 – 4036266,
+                Mobile : +91 9840337536.
+                Email : salem@yennes.com</p>
+
+            <a href="https://maps.google.com/?q=Salem"
+               target="_blank"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.34373994089!2d78.14855407370953!3d11.67003334207857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f514fc62fd89%3A0x11459cf44eb643d7!2sYENNES%20Infotec%20(P)%20Limited!5e0!3m2!1sen!2sin!4v1787125271462!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+
+
+<!-- Trichy -->
+    <div id="trichy" class="branch-content">
+        <div class="branch-details">
+            <h3>Trichy</h3>
+            <p>A-2, 1st Floor, No.9,
+                NBA Towers,11th “C” Cross West,
+                Thillai Nagar, Trichy – 620018.
+                Tel : 0431 – 4971133,
+                Mobile : +91 96000 45004.
+                Email : trichy@yennes.com</p>
+            <a href="https://maps.google.com/?q=Trichy"
+               target="_blank"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2006478.5530321994!2d76.37438219374998!3d10.8187024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf5a04f6c9315%3A0xf15135549a1264fa!2sYENNES%20Infotec%20(P)%20Limited!5e0!3m2!1sen!2sin!4v1787125338685!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+
+
+    <!-- Thirunelveli -->
+    <div id="tirunelveli" class="branch-content">
+        <div class="branch-details">
+            <h3>Thirunelveli</h3>
+            <p>No.1/10, II nd Floor, KS Arcade, ByPass Road – 
+                East, Barani Nagar, 
+                Vannarpettai, Tirunelveli – 627009.
+                Tel : 0462 – 2502242,
+                Mobile : +91 – 9600007242 & 7397451234.
+                Email : tirunelveli@yennes.com</p>
+            <a href="https://maps.google.com/?q=Thirunelveli"
+               target="_blank"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.6181244091713!2d77.71758506799463!3d8.727763074480805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b041163ee86f375%3A0xc6739819a6f96130!2sYENNES%20Infotec%20(P)%20Limited!5e0!3m2!1sen!2sin!4v1787125383309!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+
+
+<!-- Coimbatore -->
+    <div id="coimbatore" class="branch-content">
+        <div class="branch-details">
+            <h3>Coimbatore</h3>
+            <p>H, 1st Floor, No.343,S.V.P.COMPLEX,
+                Avarampalayam Road, Sidhapudur,
+                Coimbatore – 641 044.
+                Tel : 0422 – 4206555, 4204222.
+                Mobile : + 91 – 9500872444, 9944960841.
+                Email : coimbatore@yennes.com</p>
+            <a href="https://maps.google.com/?q=Coimbatore"
+               target="_blank"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.245754131008!2d76.97582507369944!3d11.02017925465305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8584f0c5ce65f%3A0x1199b1005b63dc8!2sYENNES%20Infotec%20(P)%20Limited!5e0!3m2!1sen!2sin!4v1787125447934!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+
+
+<!-- Tiruppur -->
+    <div id="tiruppur" class="branch-content">
+        <div class="branch-details">
+            <h3>Tiruppur</h3>
+            <p>2nd Floor, 22, Govindarajulu Street, K.N.P. Puram, 
+                Behind Saravana Bhavan Hotel,
+                Avinasi Road, Tiruppur – 641602.
+                Mobile : +91 – 9944960834.
+                Email : coimbatore@yennes.com</p>
+            <a href="https://maps.google.com/?q=Tiruppur"
+               target="_blank"
+               class="map-btn">
+               Open in Maps
+            </a>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2004492.4512118914!2d75.03052149375003!3d11.111565400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba907b021d9178b%3A0xc8c07cfb7c3c661a!2sYENNES%20Infotec%20(P)%20Limited!5e0!3m2!1sen!2sin!4v1787125481349!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+</section>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-box">
+            <h2>YENNES TDL</h2>
+            <p>
+                Trusted Tally Partner with 30+ years of experience
+                delivering Tally solutions, AMC support, customization
+                and implementation services.
+            </p>
+        </div>
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="company.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <h3>Our Services</h3>
+            <ul>
+                <li>Tally Customization</li>
+                <li>AMC Support</li>
+                <li>Tally Implementation</li>
+                <li>Cloud Solutions</li>
+            </ul>
+        </div>
+
+         <div class="footer-box">
+            <h3>Privacy Policy</h3>
+            <ul>
+                <li><a href="Privacypolicy.html">Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+            <p>📍 Office No. 1, 2nd Floor, Gokul Arcade, No.2, Sardar Patel Road, Adyar, Chennai – 600 020.</p>
+            <p>📞 +91 XXXXX XXXXX</p>
+            <p>✉ info@yennes.com</p>
+
+             <!-- Social Media -->
+    <div class="footer-social">
+
+        <a href="https://www.facebook.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@yennesinfotec8885"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a href="https://www.instagram.com/yennes.infotec?stkn=MThrZ2Znbmg1N3FnOQ=="
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/company/yennes-infotec-p-limited/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+    </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>
+            © 2025 YENNES TDL | All Rights Reserved
+        </p>
+    </div>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="contact.js"></script>
+
+<script>
+function showBranch(event, branchId) {
+    event.preventDefault();
+    var branches = document.querySelectorAll(".branch-content");
+    branches.forEach(function(branch) {
+        branch.classList.remove("active");
+    });
+    var buttons = document.querySelectorAll(".tab-btn");
+    buttons.forEach(function(button) {
+        button.classList.remove("active");
+    });
+    var selectedBranch = document.getElementById(branchId);
+    if (selectedBranch) {
+        selectedBranch.classList.add("active");
+    }
+    event.currentTarget.classList.add("active");
+}
+</script>
+
+</body>
+</html>

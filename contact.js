@@ -1,11 +1,11 @@
 emailjs.init({
-    publicKey: "VfYYxHS3n2o_GWKDv"
+    publicKey: "_erykYYxDeayGi0Wb"
 });
 document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();
     emailjs.send(
         "service_29qhw9b",
-        "template_48rs9rf",
+        "template_gkvpyok",
         {
             from_name: document.getElementById("name").value,
             from_email: document.getElementById("email").value,
